@@ -1,0 +1,8 @@
+set title 'Algorithms for GCD'
+set autoscale
+set xlabel 'Input size (n)'
+set ylabel 'Operation count t(n)'
+set style data line
+plot 'euclid.txt' title 'Euclid', \
+     'cicm.txt' title 'CICM', \
+     'msm.txt' title 'MSM'

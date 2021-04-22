@@ -1,0 +1,6 @@
+set title 'Bubble sort'
+set autoscale
+set xlabel 'Input size (n)'
+set ylabel 'Operation count t(n)'
+set style data line
+plot 'graph.txt' title 'Worst Case'
