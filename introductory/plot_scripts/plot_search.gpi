@@ -1,0 +1,7 @@
+set title 'Searching algorithms'
+set autoscale
+set xlabel 'Input size (n)'
+set ylabel 'Operation count t(n)'
+set style data line
+plot 'linear.txt' title 'Linear', \
+     'binary.txt' title 'Binary'
