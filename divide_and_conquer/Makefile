@@ -12,6 +12,14 @@ mergesort:
 	$(CC) ./src/merge_sort.c -g -o ./bin/merge_sort
 	./bin/merge_sort
 	gnuplot -p ./plot_scripts/merge_sort.gpi
+	rm ./graph.txt
+
+quicksort:
+	mkdir -p bin
+	$(CC) ./src/quick_sort.c -o ./bin/quick_sort
+	./bin/quick_sort
+	gnuplot -p ./plot_scripts/quick_sort.gpi
+	rm ./graph.txt
 
 clean:
 	rm -rf ./bin
